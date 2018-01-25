@@ -1,0 +1,12 @@
+<h2>Albums of <%= "#{@results[0][0]}"%></h2>
+<p>
+  <ul>
+    <% @results.each do |album| %>
+      <li>
+        <a href=<%="/albums/#{album[3]}"%>>
+          <%= album[2] %>, <%= album[1] %>
+        </a>
+      </li>
+      <% end %>
+  </ul>
+</p>
